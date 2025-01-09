@@ -4,3 +4,4 @@ cohere
 plotly
 python-docx
 PyPDF2
+openpyxl
