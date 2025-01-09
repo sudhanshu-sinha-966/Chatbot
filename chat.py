@@ -5,11 +5,13 @@ import plotly.express as px
 from io import StringIO
 import docx
 import PyPDF2
+import os
+
+
 
 # Initialize Cohere Client
-with open("key.txt", "r") as f:
-    cohere_api_key=f.read()
-print(cohere_api_key)
+cohere_api_key=st.secrets["cohere"]["key"]
+
 
 co = cohere.Client(cohere_api_key)
 
